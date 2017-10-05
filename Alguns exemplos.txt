@@ -1,0 +1,58 @@
+
+1 - Informar vetores, mudar o negativo pra ZERO e imprimir os vetores resultantes: {
+int main(void) {
+// ---------------- Variaveis -----------------------
+    int i, saida, vetor[5] = {};
+
+// -------------- Codigo -----------------------------
+    for (i = 0; i<5; i++){
+            printf("Informe o Valor do %i Vetor \n", saida = i+1);
+            scanf("%i", &vetor[i]);
+       if (vetor[i] < 0){
+        vetor[i] = 0;
+       }
+    }
+    printf("O Vetor final eh: \n >");
+    for (i = 0; i<5; i++){
+        printf("%i ,",vetor[i]);
+    }
+    //system("pause");
+    getch();
+
+}
+
+
+-------------------VERSÃO COM FUNÇÕES --------------------------------------------------------------------------{
+
+int verificaVetor(int variavel[]){
+    int vetorLocal[5] = {}, i;
+    for (i = 0; i<5; i++){
+    if (vetorLocal[i] < 0){
+        vetorLocal[i] = 0;
+       }
+    }
+    return(vetorLocal[i]);
+}
+
+int main(void) {
+// ---------------- Variaveis -----------------------
+    int i, saida, vetor[5] = {};
+
+// -------------- Codigo -----------------------------
+    for (i = 0; i<5; i++){
+            printf("Informe o Valor do %i Vetor \n", saida = i+1);
+            scanf("%i", &vetor[i]);
+            verificaVetor(vetor[i]);
+
+    }
+    printf("O Vetor final eh: \n >");
+    for (i = 0; i<5; i++){
+        printf("%i ,",vetor[i]);
+    }
+    //system("pause");
+    getch();
+
+}
+}
+}
+// 2 - Multiplicar um valor pelos valores do vetor:
